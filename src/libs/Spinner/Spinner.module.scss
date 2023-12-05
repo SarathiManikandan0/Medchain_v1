@@ -1,0 +1,54 @@
+$primary-color: #3498db; // Change to your desired primary color
+$secondary-color: #2ecc71; // Change to your desired secondary color
+
+.container {
+  position: relative;
+
+  .lds-ring {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    div {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $primary-color; // Use your primary color
+      border-radius: 50%;
+      animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: $primary-color transparent transparent transparent; // Use your primary color
+    }
+  }
+
+  .blue {
+    div {
+      border: 2px solid $secondary-color; // Use your secondary color
+      border-color: $secondary-color transparent transparent transparent; // Use your secondary color
+    }
+  }
+
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

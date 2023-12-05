@@ -1,0 +1,39 @@
+$primary-bg-color: #2c3e50; // Change to your desired primary background color
+$secondary-bg-color: #ecf0f1; // Change to your desired secondary background color
+$text-color: #34495e; // Change to your desired text color
+
+.homeContainer {
+  padding: 0 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary-bg-color; // Use your primary background color
+  border: 3px solid #0d90fc; /* Dark blue border color */
+
+  color: $text-color; // Use your text color
+
+  .left {
+    width: 50%;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      border: 5px solid #0d90fc; /* Dark blue border color */
+
+    }
+  }
+
+  .right {
+    width: 40%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $secondary-bg-color; // Use your secondary background color
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #0d90fc; /* Dark blue border color */
+
+  }
+}

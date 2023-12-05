@@ -1,0 +1,40 @@
+.navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Set your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+  
+    .logo {
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    .loggedOut {
+      cursor: pointer;
+      color: #007bff; /* Set your desired color */
+      font-weight: bold;
+    }
+  
+    .profile {
+      display: flex;
+      align-items: center;
+  
+      .image {
+        margin-right: 10px;
+  
+        img {
+          width: 30px; /* Set your desired width */
+          height: 30px; /* Set your desired height */
+          border-radius: 50%;
+        }
+      }
+  
+      .userKey {
+        font-weight: bold;
+      }
+    }
+  }
+  

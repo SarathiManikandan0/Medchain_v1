@@ -1,0 +1,168 @@
+$primary-color: rgb(55, 112, 255);
+$secondary-color: rgb(173, 167, 167);
+$background-color: rgb(23, 25, 35);
+$font-color: white;
+
+.loginContainer {
+  width: 100%;
+  height: max-content;
+
+  .navBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    border: 3px solid #0d90fc; /* Dark blue border color */
+    background: linear-gradient(to right, #003344, #0A192F, #003344);
+
+    .logo {
+      font-weight: bold;
+      font-size: 35px;
+      color: $font-color;
+    }
+
+    .navLinks {
+      display: flex;
+      gap: 20px;
+    
+      a {
+        color: $font-color;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    
+        &:hover {
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+    
+
+    .loggedOut {
+      width: 140px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: $primary-color;
+      color: $font-color;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .image {
+        border: 1px solid $secondary-color;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 35px;
+        height: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+
+      .userKey {
+        width: 100px;
+        font-size: 18px;
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $font-color;
+      }
+    }
+  }
+
+  .signupModal {
+    width: 600px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      flex: 1;
+      width: 100%;
+
+      .roles {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        div {
+          width: calc(50% - 10px);
+          display: flex;
+          gap: 10px;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 10px;
+          cursor: pointer;
+
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+
+          p {
+            font-weight: 16px;
+            font-weight: 500;
+            color: $font-color;
+          }
+        }
+
+        .selected {
+          border: 2px solid $primary-color;
+          border-radius: 10px;
+        }
+      }
+
+      h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: $font-color;
+        border: 1px solid #0d90fc; /* Dark blue border color */
+      }
+
+      .textInput {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid $secondary-color;
+        outline: none;
+        font-size: 130%;
+        color: $font-color;
+        background-color: $background-color;
+      }
+    }
+
+    .create {
+      width: 80%;
+      height: 50px;
+      border-radius: 10px;
+      background-color: $primary-color;
+      color: $font-color;
+      margin: 5px auto 0 auto;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}

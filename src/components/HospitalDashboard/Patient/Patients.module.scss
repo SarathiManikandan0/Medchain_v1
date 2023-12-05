@@ -1,0 +1,145 @@
+// Patients.module.scss
+
+// Adjust colors, fonts, and other styles as needed
+
+.patientsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #2C0735, #73293B, #2C0735);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  color: #ebf4ff; /* Light text color */
+  border-bottom: 3px solid #2ba0ff;
+
+}
+
+.leftColumn {
+  flex: 1;
+  max-width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.rightColumn {
+  flex: 0 0 25%;
+  margin-left: 40px;
+  box-shadow: 0 2px 4px rgba(255, 253, 253, 0.1);
+
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #2d3748; /* Dark mixed background color */
+  margin: 20px 0; /* Adjusted margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.patientsList {
+  background: linear-gradient(to right, #2C0735, #73293B, #2C0735);
+
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgb(245, 241, 241);
+  border-bottom: 4px solid #000000;
+
+
+}
+
+.patientItem {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 20px;
+  background: linear-gradient(to right, #044358, #14315d, #09526b);
+  border-radius: 5px;
+  box-shadow: 0 3px 4px rgb(35, 33, 33);
+}
+
+.addButton {
+  background-color: #30267e;
+   /* Clean and professional blue color */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-bottom: 3px solid #000000;
+
+
+  &:hover {
+    background-color: #093a6e; /* Slightly darker blue color on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+}
+
+.addPatientModal {
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 400px; /* Adjust the max width as needed */
+
+    button {
+      background-color: #dc3545; /* Adjust the close button color */
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+      border-bottom: 3px solid #000000;
+
+
+      &:hover {
+        background-color: #bd2130; /* Adjust the hover color */
+      }
+    }
+  }
+}
+
+.patientForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+      border-color: #30267e; /* Focus color */
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

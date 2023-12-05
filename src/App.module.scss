@@ -1,0 +1,18 @@
+$primary-bg-color: #3498db; // Change to your desired primary background color
+$text-color: #ecf0f1; // Change to your desired text color
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-bg-color; // Use your primary background color
+  color: $text-color; // Use your text color
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}

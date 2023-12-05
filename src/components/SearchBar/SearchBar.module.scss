@@ -1,0 +1,28 @@
+.searchBar {
+  width: 40%;
+  height: 30px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 20px;
+  border: 1px solid #4a5568; /* Dark mixed border color */
+  border: 3px solid #0d90fc; /* Dark blue border color */
+
+
+  .searchIcon {
+    height: 100%;
+    fill: #e9e9e9; /* Dark blue light color */
+  }
+  .input {
+    flex: 1;
+    height: 90%;
+    border: none;
+    outline: none;
+    font-size: 90%;
+    color: #a0aec0; /* Dark blue light color */
+    background: linear-gradient(to right, #1a202c, #3c4d63, #1a202c);
+
+  }
+}
